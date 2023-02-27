@@ -7,49 +7,33 @@
     box-sizing: border-box;
 }
 
-body{
-    font-family: 'Quicksand', sans-serif;
-    color: grey;    
-
-}
-/* para dimensionar o layout grid da pagina, limitar a aproximação das bordas */
-.container-grid{
-    width: 80%;
-    margin: 0 auto;
-
-}
-
-/* ****Cabeçalho**** */
 header{
-    background-color: grey;
-
+    background-color: #676767;
+    margin-bottom: 10px;
+    padding: 20px 0px;
+    /* Cabeçalho */
 }
 header .header-flex{
     display: flex;
     justify-content: space-between;
+    /* Esse separa os elementos dentro do head, nesse caso a logo e o nav */
 }
 
 header h1{
-    font-weight: 300;
+    font-weight: 9000;
     color: white;
-    border: 1px solid red;
-
 }
 
 header h1 #logoux{
     font-weight: 600;  
     font-style: italic  ;
-
 }
 
 header nav{
-    border: 1px solid red;
     width: 200px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-
 }
 
 header nav a{
@@ -57,45 +41,77 @@ header nav a{
     text-decoration: none;
     display: flex;
     justify-content: space-between;
-
 }
 
-h2{
-    border: 1px solid red;
-    
+body{
+    font-family: 'Quicksand', sans-serif;
+    color: grey;    
+    background-color: #edeced;
 }
+
+.container-grid{
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1200px;]
+      /*Aqui regula quanto o site será afetado pelo zoom pessoal do usuário */
+    min-width: 992px;
+    /* para dimensionar o layout grid da pagina, limitar a aproximação das bordas, os famosos 10% de cada lado */    
+}
+
 main .colunas-flex{
     display: flex;
     justify-content: space-between;
 }
+
 main .coluna1{
     width: 75%
 }
+
+main .coluna1 p{
+    line-height: 20px;
+}
 #lapis {
     width: 100%;
-}
-main .coluna2{
-    width: 20%;
+    display: block;
 }
 main .margin{
     margin-right: 20px;
     margin-left: 20px;
     margin-top: 7px;
+    /* Margem entre os textos da section */
 }
 main .margintopbottom{
     margin-right: 20px;
     margin-left: 20px;
     margin-top: 15px;
     margin-bottom: 20px;
+    /* Outra margem entre os textos de cima e de baixo */
 }
+.textos{
+    background-color: white;
+    /* Esse grupo foi específico para definir a cor de fundo branco  de cada coluna e cada article */
 }
+
 aside{
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    /* Prestar atenção aqui, deu problema do nada mas consegui resolver */
 }
-/* ****Rodapé**** */
 footer{
     color: white;
-    background-color: grey;
-
+    background-color: #676767;
+    display: flex;
+    align-items: flex-end;
+    margin-top: 10px;
+    padding: 20px 0px;
+}
+#example{
+    padding: 20px 0px 20px 0px;
+    /* Padding apenas segue o sentido relógio top / right / bottom / left */
+    padding: 20px 0px;
+    /* top/bottom right/left*/
+    padding: 20px;
+    /* Padding com apenas um valor é a mesma distancia para top bottom right left */
+    /* ****Rodapé****
+    Nele especifiquei que os elementos devem estar colados no fundo e uma margem superior que separa o rodapé da section e dos articles */
 }   
