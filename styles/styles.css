@@ -100,7 +100,17 @@ main .margintopbottom{
 aside{
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    width: 200px;
+
     /* Prestar atenção aqui, deu problema do nada mas consegui resolver */
+}
+article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+
 }
 
 footer{
