@@ -6,11 +6,13 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+h3{
+    font-weight: lighter;
+}
 header{
     background-color: #676767;
     margin-bottom: 10px;
-    padding: 20px 0px;
+    padding: 20px 0;
     /* Cabeçalho */
 }
 
@@ -35,6 +37,8 @@ header nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+
 }
 
 header nav a{
@@ -51,9 +55,9 @@ body{
 }
 
 .container-grid{
-    width: 80%;
+    width: 80vw;
     margin: 0 auto;
-    max-width: 1200px;]
+    max-width: 1200px;
       /*Aqui regula quanto o site será afetado pelo zoom pessoal do usuário */
     min-width: 992px;
     /* para dimensionar o layout grid da pagina, limitar a aproximação das bordas, os famosos 10% de cada lado */    
@@ -91,28 +95,73 @@ main .margintopbottom{
     margin-bottom: 20px;
     /* Outra margem entre os textos de cima e de baixo */
 }
-
+main section{
+    margin-left: 20px;
+}
 .textos{
     background-color: white;
     /* Esse grupo foi específico para definir a cor de fundo branco  de cada coluna e cada article */
 }
-
 aside{
+    margin-left: 20px;
+
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 200px;
+    align-items: center;
+}
+aside .textos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 300px;
 
     /* Prestar atenção aqui, deu problema do nada mas consegui resolver */
 }
-article{
+aside article{
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 300px;
 
 }
+aside .textos h3{
+    border-bottom: 0.5px solid #676767;
 
+    width: 300px;
+    text-align: center;
+    /* Aqui eu  coloquei o texto alinhado para o centro de seu espaço ocupado, para seu tamanho poder prencher toda a box que ele pertence */
+
+    margin-bottom: 20px;
+    /* Espacinho para distanciar o subtítulo dos articles do resto do seu conteúdo */
+}
+aside article #inputbusca{
+    width: 185px;
+    height: 30px;
+}
+aside article #input{
+    display: flex;
+    gap: 20px;
+
+    margin-bottom: 15px;
+
+}
+aside article #input #searchicon{
+    height: 30px;
+}
+aside article #postanteriores{
+    padding-left: 2px;
+    padding-bottom: 30px;
+}
+aside .textos > p {
+    text-align: center;
+}
+aside .textos #inputinscreva{
+    margin: 20px 0px;
+
+    width: 185px;
+    height: 30px;
+}
 footer{
     color: white;
     background-color: #676767;
